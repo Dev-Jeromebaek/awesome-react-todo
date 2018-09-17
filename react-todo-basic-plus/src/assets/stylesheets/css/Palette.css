@@ -1,0 +1,33 @@
+.palette {
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.5;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.color:hover {
+  opacity: 0.75;
+}
+
+.color.active,
+.color:active {
+  opacity: 1;
+}
+
+.color + .color {
+  margin-left: 1rem;
+}
+
+.select-color-check {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin-left: 0.9rem;
+  font-weight: 800;
+}
